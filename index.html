@@ -67,115 +67,152 @@
       }	
      </style>
   </head>
-	<body class="is-preload">
+ <body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<!-- Wrapper -->
+<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Beutah The Analyst Portfolio<br />
-						</h1>
-						<p>Business Data Analyst & Intelligence Skilled in SQL, PowerBI, Tableau, Python & R. I Create meaningful insights for a Business Strategy.
+<!-- Intro -->
+<div id="intro">
+  <h1>Beutah The Analyst Portfolio<br /></h1>
+  <p>Business Data Analyst & Intelligence Skilled in SQL, PowerBI, Tableau, Python & R. I Create meaningful insights for a Business Strategy.
+  <ul class="actions">
+  <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+  </ul>
+</div>
+
+<!-- Header -->
+<header id="header">
+  <a href="index.html" class="logo">Beutah The Analyst</a>
+</header>
+
+<!-- Nav -->
+<nav id="nav">
+  <ul class="links">
+   <li class="active"><a href="index.html">Projects</a></li>
+  </ul>
+  <ul class="icons">
+  <li><a href="https://www.linkedin.com/in/beutah-monyoncho/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+  <li><a href="https://github.com/beutah/beutah.github.io" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+  </ul>
+</nav>
+
+<!-- Main -->
+<div id="main">
+
+  <!-- Featured Post -->
+  <article class="post featured">
+    <header class="major">
+	<h2>Data Visualization in PowerBI</a></h2>
+	<p> This project explores the correlation between socio-economic factors and educational outcomes across Massachusetts public schools for 2020–2021.</p>
+    </header>
+
+    <!-- Tabs for Power BI Project -->
+      <div class="tabs">
+        <button class="tablink active" onclick="openTab(event, 'sat')">Low-Income vs SAT Scores</button>
+        <button class="tablink" onclick="openTab(event, 'income')">Household Income</button>
+        <button class="tablink" onclick="openTab(event, 'dropouts')">Dropout Rates</button>
+      </div>
+
+      <div id="sat" class="tabcontent" style="display: block;">
+        <h3>Low-Income % vs. Average SAT Scores</h3>
+        <p>A significant negative correlation between low-income percentage and SAT scores was identified across districts.</p>
+	<!-- Power BI Embed -->
+        <iframe 
+          width="100%" 
+          height="600px" 
+          src="https://app.powerbi.com/view?r=YOUR_EMBED_LINK_HERE" 
+          frameborder="0" 
+          allowFullScreen="true">
+        </iframe>
+
+        <!-- Download Report Button -->
+        <a href="projects/powerbi/Education_Report.pdf" download class="button">Download Full Report (PDF)</a>
+      </div>
+      <div id="income" class="tabcontent">
+        <h3>Median Household Income by School District</h3>
+        <p>Visualizing the economic disparities among school districts, highlighting wealthier and disadvantaged regions.</p>
+        <img src="projects/powerbi/Screenshot2.png" alt="Household Income Visualization">
+      </div>
+
+      <div id="dropouts" class="tabcontent">
+        <h3>Dropout Rates</h3>
+        <p>Analysis of dropout rates showing Grade 11 had the highest dropout incidence at 29.65%, with cities like Boston and Springfield heavily affected.</p>
+        <ul>
+          <li>Dropout vs enrollment visual comparison</li>
+          <li>Top 5 districts by dropout numbers</li>
+        </ul>
+      </div>
+
+      <p class="small-text">
+        Data Sources: 
+        <a href="https://www.doe.mass.edu/" target="_blank">Massachusetts Department of Education</a> | 
+        <a href="https://www.census.gov/" target="_blank">U.S. Census Bureau</a>
+      </p>
+
+    </article> 	
+						  
 					
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Beutah The Analyst</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/beutah-monyoncho/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/beutah/beutah.github.io" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-						<article class="post featured">
-						  <header class="major">
-						   <h2><a href="#">Data Visualization <br/>In PowerBI</a></h2>
-						   <p style="text-align: left;">
-						    This Power BI project, covering the 2020-2021 academic year, analyzes the relationship between socio-economic factors and educational outcomes across school districts in Massachusetts, USA. The report focuses on three key areas:	
-						   </p>
-						   <div align= "left">
-							<ul>
-           						   <li>
-							   <strong>Low-Income % vs. Average SAT Scores</strong>: Initially identified as a weak negative correlation, further analysis revealed a high correlation between the percentage of low-income students in a school district and lower average SAT scores, indicating that higher low-income populations are strongly associated with reduced SAT performance.							   
-							   <br>
-							   <img src="Screenshot2.png" alt="Low_Income Vs SAT Scores" style="max-width:100%;">
-							   </li>
-							   <li>
-							   <strong>Median Household Income by School District</strong>: A table ranks the top 10 school districts by median household income, with Weston, MA, leading at $201,200, and Norfolk, MA, at $143,682. This highlights the economic disparity across districts.
-							   </li>
-							   <li>
-							   <strong>Dropout Rates</strong>: The report identifies a total dropout count of 12,000 students across districts. Grade 11 leads with the highest dropout rate at 29.65% (646.1 students). The top 5 districts with the highest dropout rates are State Totals, Boston, Springfield, Brockton, and Lynn. Additional visuals provide a breakdown by grade (Grades 9–12) and a comparison of dropout and enrolled totals for the top 10 districts.
-						   	  </li>
-							 </ul>
-						   </div>
-						  </header>
-						  <a href="#" class="image main"><img src="images/img_0324.jpg" alt="" /></a>
-						  <ul class="actions special">
-							  <li><a href="#" class="button large">View project</a></li>
-						   </ul>
-							</article>
-					</div>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">Airline Database<br />
-										With SQl</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Airline.JPG" alt="" /></a>
-									<p>In this project, I created an Airline Database with provision of querying by employees, customers, agents and the public.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Data Cleaning <br />
-										with Python</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/IMG_0322.JPG" alt="" /></a>
-									<p>In this project I used Pandas package in Python to clean world's patent data.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
+   <!-- Posts -->
+<section class="posts">
+   <article>
+    <header>
+     <h2><a href="#">Airline Database<br />With SQl</a></h2>
+    </header>
+    <a href="#" class="image fit"><img src="images/Airline.JPG" alt="" /></a>
+    <p>Built an airline database supporting customer, employee, and agent queries for operational reporting.</p>
+    <ul class="actions special">
+     <li><a href="#" class="button">View project</a></li>
+    </ul>
+</article>
 								
-							</section>
+<article>
+  <header>
+     <h2><a href="#">Data Cleaning <br />With Python</a></h2>
+  </header>
+  <a href="#" class="image fit"><img src="images/IMG_0322.JPG" alt="" /></a>
+  <p>Cleaned and transformed international patent data using Pandas, standardizing formats and handling missing data.</p></p>
+  <ul class="actions special">
+     <li><a href="#" class="button">View Project</a></li>
+  </ul>
+</article>
+</section>
+</div>
 
-					</div>
+<!-- Footer -->
+  <div id="copyright">
+    <ul><li>&copy; Beutah Monyoncho</li></ul>
+  </div>
+</div>
+	 
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy;Beutah Monyoncho</li></ul>
-					</div>
+<!-- Tab Switching Script -->
+<script>
+function openTab(evt, tabName) {
+  const tabcontent = document.getElementsByClassName("tabcontent");
+  const tablinks = document.getElementsByClassName("tablink");
 
-			</div>
+  for (let i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.classList.add("active");
+}
+</script>
 
-	</body>
-</html>>
+</body>
+</html>
+
+				
