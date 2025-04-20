@@ -65,7 +65,22 @@
         color: gray;
       	margin-top: 2rem;
       }	
-     </style>
+	/* ✅ Fade-in Animation */
+	@keyframes fadeIn {
+  	from {
+    	  opacity: 0;
+    	  transform: translateY(20px);
+      }
+      to {
+    	opacity: 1;
+    	transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+     animation: fadeIn 1s ease-out;
+    }	
+    </style>
   </head>
  <body class="is-preload">
 
