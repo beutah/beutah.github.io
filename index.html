@@ -65,7 +65,7 @@
         color: gray;
       	margin-top: 2rem;
       }	
-	/* ✅ Fade-in Animation */
+	/*Fade-in Animation */
 	@keyframes fadeIn {
   	from {
     	  opacity: 0;
@@ -175,7 +175,7 @@
     <li>Top 5 districts by dropout numbers</li>
   </ul>
 </div>
-
+<!-- Data Sources -->
       <p class="small-text">
         Data Sources: 
         <a href="https://www.doe.mass.edu/" target="_blank">Massachusetts Department of Education</a> | 
@@ -238,10 +238,18 @@ function openTab(evt, tabName) {
   for (let i = 0; i < tablinks.length; i++) {
     tablinks[i].classList.remove("active");
   }
-
-  document.getElementById(tabName).style.display = "block";
+  const currentTab = document.getElementById(tabName);
+  currentTab.style.display = "block";
   evt.currentTarget.classList.add("active");
-}
+	
+  // ✅ Reset fade-in animations each time tab opens
+  const fadeElements = currentTab.querySelectorAll('.fade-in');
+  fadeElements.forEach(el => {
+    el.style.animation = 'none';
+    el.offsetHeight; // Trigger reflow
+    el.style.animation = null;
+  });
+}	  
 </script>
 
 </body>
