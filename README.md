@@ -55,7 +55,7 @@ Screenshots of Power BI visualizations and project dashboards are available insi
 ## 👨‍💻 About Me
 
 My name is **Beutah Monyoncho**,  
-I am passionate about using data to tell meaningful stories and empower smarter business decisions.  
+I am passionate about using data to tell meaningful stories and empower smarter business decisions. 
 I bring strong skills in data visualization, business intelligence, and database management.
 
 [Connect with me on LinkedIn](https://www.linkedin.com/in/beutah-monyoncho/)  
