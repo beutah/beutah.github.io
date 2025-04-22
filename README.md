@@ -1,5 +1,5 @@
 
-# Beutah The Analyst Portfolio
+# Beutah The Strategist Portfolio
 
 Welcome to my professional portfolio!  
 I specialize in Business Data Analytics and Intelligence, using tools like **Power BI**, **SQL**, **Python**, and **Tableau** to create impactful data-driven solutions.
