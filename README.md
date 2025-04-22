@@ -10,7 +10,7 @@ This portfolio showcases several key projects where I analyze, visualize, and dr
 
 ## 🚀 Projects Included
 
-### 1. [Data Visualization in Power BI](https://beutah.io/projects/powerbi/)
+### 1. Data Visualization in Power BI
 - Explores the correlation between socio-economic factors and educational outcomes across Massachusetts public schools (2020–2021).
 - Features:
   - Low-Income % vs Average SAT Scores Analysis
